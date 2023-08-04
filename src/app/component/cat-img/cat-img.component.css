@@ -1,0 +1,73 @@
+
+.Button {
+    background-color: #FF6B6B;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.Button:hover {
+    background-color: #FF4040;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Button:active {
+    background-color: #FF4040;
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px) rotate(5deg); }
+    50% { transform: translateX(5px) rotate(-5deg); }
+    75% { transform: translateX(-5px) rotate(5deg); }
+    100% { transform: translateX(0); }
+}
+.mainBodyBlock {
+    width: 500px;
+    height: 600px;
+    margin: auto;
+    padding: 30px;
+    background-color: #E5E9F2;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.titleText {
+    text-align: center;
+    color: #3498DB;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.imgBodyBlock {
+    background-color: #FFFFFF;
+    width: 450px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../../../assets/GalaxyNeko.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imgBodyBlock img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}

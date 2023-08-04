@@ -1,0 +1,12 @@
+<div class="mainBodyBlock" >
+    <p class="titleText">サービスから猫の画像をランダムに表示</p>
+    <span class="Button" (click)="onClick()">更新</span>
+        <div class="imgBodyBlock" >
+            <ng-container *ngIf="catdata"; else="elseBlock">
+                <img [src]="catdata.url" alt="Cat" width="450px" height="300px">
+            </ng-container>
+            <ng-template #elseBlock>
+                <p>{{ error }}</p>
+            </ng-template>
+        </div>
+</div>
